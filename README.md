@@ -7,8 +7,9 @@ Get the URL, title tag, h1, h2 tags for top 10 results.
 
 ## Use
 
-'''
+```
+$ git clone https://github.com/Constantin017/turbo-octo-engine.git
 $ pipenv shell
 $ pip install requirements.txt
 $ python scrapper.py
-'''
+```
