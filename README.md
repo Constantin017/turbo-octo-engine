@@ -9,6 +9,7 @@ Get the URL, title tag, h1, h2 tags for top 10 results.
 
 ```
 $ git clone https://github.com/Constantin017/turbo-octo-engine.git
+$ cd turbo-octo-engine
 $ pipenv shell
 $ pip install requirements.txt
 $ python scrapper.py
