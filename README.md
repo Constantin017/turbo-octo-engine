@@ -12,5 +12,5 @@ $ git clone https://github.com/Constantin017/turbo-octo-engine.git
 $ cd turbo-octo-engine
 $ pipenv shell
 $ pip install requirements.txt
-$ python scrapper.py
+$ python scrap.py
 ```

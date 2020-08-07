@@ -18,7 +18,7 @@ def get_h1(html:BeautifulSoup):
     """Get page H1 tag"""
     h1 = None
     if html.h1:
-        h1 = html.h1.text
+        h1 = html.h1.text.replace('\n', '')
     return h1
 
 
@@ -26,7 +26,7 @@ def get_h2(html):
     """Get page H2 tag"""
     h2 = None
     if html.h2:
-        h2 = html.h2.text
+        h2 = html.h2.text.replace('\n', '')
     return h2
 
 
@@ -63,10 +63,10 @@ def get_google_search_links(html):
     _links = html.select('#search .r a')
     for link in _links:
         links.append(link.get('href'))
-    return links
+    return links[0:10]
 
 
-def get_google_search_result(query):
+def search(query):
     """Get search result from google search page be query"""
     results = None
     message = 'Error'
